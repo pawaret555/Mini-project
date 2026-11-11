@@ -1,270 +1,35 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page Component</title>
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Tailwind CSS -->
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<title>Document</title>
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+</style>
 </head>
-<body class="bg-white text-gray-800 antialiased min-h-screen">
+<body>
 <!-- Section 1: gg -->
 <section>
 <!-- คนที่ได้รับมอบหมายให้ทำ Section 1 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
 </section>
-
 <!-- Section 2: shine -->
 <section>
 <!-- คนที่ได้รับมอบหมายให้ทำ Section 2 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
-    <section id="section-2" class="flex flex-col items-center justify-center w-full py-16 px-4 md:px-8 bg-white gap-20 overflow-hidden">
-
-        <!-- 1. Trusted Companies Section (กว้างเต็มจอ, สูง 342px) -->
-        <div class="flex flex-col items-center justify-center w-full h-auto md:h-[420px] max-w-5xl gap-8 px-4 py-8 md:py-0">
-            <!-- flex flex-col items-center justify-center w-full h-auto md:h-[342px] max-w-5xl gap-8 px-4 py-8 md:py-0 -->
-            <!-- Section Title -->
-            <h3 class="text-2xl md:text-3xl font-extrabold text-[#181623] text-center tracking-tight">
-                Trusted Companies
-            </h3>
-    
-            <!-- Logo Container: เรียงแนวตั้งบนมือถือ (w-full ให้เต็มจอ) -> แนวนอนบนจอ md ขึ้นไป -->
-            <div class="flex flex-col md:flex-row items-center justify-center w-full gap-4 md:gap-8">    
-                <!-- Logo 1: Martoni -->
-                <div class="flex items-center justify-center max-w-[320px] md:max-w-none md:w-auto px-6 py-4 bg-transparent border border-transparent rounded-xl hover:bg-white hover:border-slate-100 hover:shadow-lg hover:shadow-slate-200/60 hover:-translate-y-1 transition-all duration-300">
-                    <a href="#"><img src="/assets/logos/martoni-logo.png" alt="Martoni" class="h-auto md:h-16 w-auto object-contain" /></a>
-                </div>
-    
-                <!-- Logo 2: Real Estate -->
-                <div class="flex items-center justify-center max-w-[320px] md:max-w-none md:w-auto px-6 py-4 bg-transparent border border-transparent rounded-xl hover:bg-white hover:border-slate-100 hover:shadow-lg hover:shadow-slate-200/60 hover:-translate-y-1 transition-all duration-300">
-                    <a href="#"><img src="/assets/logos/real-estate-logo.png" alt="Real Estate" class="h-auto md:h-16 w-auto object-contain" /></a>
-                </div>
-    
-                <!-- Logo 3: ProMedia (Highlight Card) -->
-                <div class="flex items-center justify-center max-w-[320px] md:max-w-none md:w-auto px-6 py-4 bg-transparent border border-transparent rounded-xl hover:bg-white hover:border-slate-100 hover:shadow-lg hover:shadow-slate-200/60 hover:-translate-y-1 transition-all duration-300">
-                    <a href="#"><img src="/assets/logos/promedia-logo.png" alt="ProMedia" class="h-auto md:h-16 w-auto object-contain" /></a>
-                </div>
-    
-                <!-- Logo 4: Studio -->
-                <div class="flex items-center justify-center max-w-[320px] md:max-w-none md:w-auto px-6 py-4 bg-transparent border border-transparent rounded-xl hover:bg-white hover:border-slate-100 hover:shadow-lg hover:shadow-slate-200/60 hover:-translate-y-1 transition-all duration-300">
-                    <a href="#"><img src="/assets/logos/studio-logo.png" alt="Studio" class="h-auto md:h-16 w-auto object-contain" /></a>
-                </div>
-    
-                <!-- Logo 5: Maxdino -->
-                <div class="flex items-center justify-center max-w-[320px] md:max-w-none md:w-auto px-6 py-4 bg-transparent border border-transparent rounded-xl hover:bg-white hover:border-slate-100 hover:shadow-lg hover:shadow-slate-200/60 hover:-translate-y-1 transition-all duration-300">
-                    <a href="#"><img src="/assets/logos/maxdino-logo.png" alt="Maxdino" class="h-auto md:h-16 w-auto object-contain" /></a>
-                </div>
-    
-            </div>
-        </div>
-    
-    
-        <!-- 2. Feature / Video Section (Responsive: แนวตั้งบนมือถือ ➔ แนวนอนบนจอใหญ่) -->
-        <div class="flex flex-col lg:flex-row items-center justify-between w-full max-w-6xl gap-12 lg:gap-16 pt-8">
-            
-            <!-- Left Side: Overlapping Circles Graphic with Play Button -->
-            <div class="relative flex items-center justify-center w-full max-w-[580px] h-[580px]">
-                
-                <!-- Circle 1: Blue Circle (ขนาดตั้งต้น 574px, สี #D4EFF6) -->
-                <div class="absolute left-0 bottom-0 w-[340px] h-[340px] sm:w-[450px] sm:h-[450px] lg:w-[574px] lg:h-[574px] bg-[#D4EFF6] rounded-full"></div>
-                
-                <!-- Circle 2: Yellow Circle (ขนาดตั้งต้น 453px, สี #FEE095) -->
-                <div class="absolute right-4 top-0 w-[280px] h-[280px] sm:w-[360px] sm:h-[360px] lg:w-[453px] lg:h-[453px] bg-[#FEE095] rounded-full shadow-sm"></div>
-    
-                <!-- Play Button Icon (ปรับตำแหน่งมาอยู่ตรงรอยต่อขอบวงกลมด้านล่างขวา) -->
-                <button class="absolute bottom-16 right-20 sm:bottom-24 sm:right-28 lg:bottom-28 lg:right-32 flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-full shadow-2xl group hover:scale-105 active:scale-95 transition-transform cursor-pointer duration-200" aria-label="Play Video">
-                    <!-- Play Triangle Icon -->
-                    <div class="w-0 h-0 border-y-[8px] border-y-transparent border-l-[14px] border-l-[#181623] ml-1 group-hover:border-l-[#ff9f00] transition-colors"></div>
-                </button>
-    
-            </div>
-    
-            <!-- Right Side: Content Text -->
-            <div class="flex flex-col items-start w-full max-w-lg px-8 max-[640px]:px-8 sm:px-8 md:px-6 lg:px-0 gap-6">
-    
-                <!-- Title -->
-                <h2 class="text-3xl max-[640px]:px-8 sm:text-4xl lg:text-[40px] font-extrabold text-[#181623] leading-tight tracking-tight">
-                    We Help to Create Possibility & Success in Your Career!
-                </h2>
-    
-                <!-- Paragraph -->
-                <p class="text-sm max-[640px]:px-8 sm:text-base font-normal text-slate-500 leading-relaxed">
-                    Continually administrate process-centric human capital rather than bleeding-edge methodologies. Distinctively supply accurate methods of empowerment before.
-                </p>
-    
-                <!-- CTA Button -->
-                <button type="button" class="mt-2 w-[205px] h-[64px] bg-[#FFA502] hover:bg-[#e68f00] hover:scale-[1.01] cursor-pointer active:scale-[0.96] text-white text-sm font-bold rounded-xl shadow-lg shadow-orange-500/20 transition-all duration-200">
-                    Get Started Today
-                </button>
-    
-            </div>
-    
-        </div>
 </section>
-
 <!-- Section 3: save -->
 <section>
 <!-- คนที่ได้รับมอบหมายให้ทำ Section 3 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
-    <!-- SECTION 1: Popular Departments -->
-   
-  <section class="bg-[#F5EBD8] mt-10 py-12 sm:py-16 px-4 sm:px-6 lg:px-8 w-full sm:w-[92%] lg:w-[90%] mx-auto flex justify-center">
-    <div class="max-w-5xl w-full mx-auto flex flex-col items-center">
-      
-      <!-- Title -->
-      <h2 class="text-2xl sm:text-3xl font-bold text-center text-[#111827] mb-8 sm:mb-12 leading-tight">
-        We Have Most of<br class="hidden sm:inline"> Popular Departments
-      </h2>
-
-      <!-- Cards Grid (Centered & Responsive) -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mb-10 justify-items-center">
-        
-        <!-- Card 1 -->
-        <div class="bg-white rounded-[28px] p-6 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_15px_35px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col justify-between w-full max-w-sm">
-          <div>
-            <div class="w-full h-48 rounded-2xl mb-6 overflow-hidden">
-                <img
-                  src="AI.jpg"
-                  alt="Artificial Intelligence"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-            <h3 class="text-xl font-bold text-[#222222] mb-3 tracking-tight">Artificial Intelligence</h3>
-            <p class="text-sm text-[#7A7A7A] leading-relaxed mb-6">
-              Assertively parallel task synergistic deliverables after high-quality.
-            </p>
-          </div>
-          <a href="#" class="inline-flex items-center text-sm font-semibold text-[#FFB200] hover:text-[#e09c00] transition-colors">
-            Learn More <span class="ml-2 text-lg">→</span>
-          </a>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="bg-white rounded-[28px] p-6 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_15px_35px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col justify-between w-full max-w-sm">
-          <div>
-            <div class="w-full h-48 rounded-2xl mb-6 overflow-hidden">
-                <img
-                  src="engineering.jpg"
-                  alt="Civil Engineering"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-            <h3 class="text-xl font-bold text-[#222222] mb-3 tracking-tight">Civil Engineering</h3>
-            <p class="text-sm text-[#7A7A7A] leading-relaxed mb-6">
-              Assertively parallel task synergistic deliverables after high-quality.
-            </p>
-          </div>
-          <a href="#" class="inline-flex items-center text-sm font-semibold text-[#FFB200] hover:text-[#e09c00] transition-colors">
-            Learn More <span class="ml-2 text-lg">→</span>
-          </a>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="bg-white rounded-[28px] p-6 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_15px_35px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col justify-between w-full max-w-sm">
-          <div>
-            <div class="w-full h-48 rounded-2xl mb-6 overflow-hidden">
-                <img
-                  src="Business .jpg"
-                  alt="Business Studies"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-            <h3 class="text-xl font-bold text-[#222222] mb-3 tracking-tight">Business Studies</h3>
-            <p class="text-sm text-[#7A7A7A] leading-relaxed mb-6">
-              Assertively parallel task synergistic deliverables after high-quality.
-            </p>
-          </div>
-          <a href="#" class="inline-flex items-center text-sm font-semibold text-[#FFB200] hover:text-[#e09c00] transition-colors">
-            Learn More <span class="ml-2 text-lg">→</span>
-          </a>
-        </div>
-
-      </div>
-
-      <!-- Button -->
-      <button class="bg-[#FFB200] hover:bg-[#e09c00] text-white font-medium text-xs py-3.5 px-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-200">
-        View All Department
-      </button>
-
-    </div>
-  </section>
-
-
-  <!-- SECTION 2: Famous Teacher -->
-  <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 w-full flex justify-center">
-    <div class="max-w-5xl w-full mx-auto">
-      
-      <!-- Header Area -->
-      <div class="flex flex-col sm:flex-row justify-between items-center mb-12 gap-4 text-center sm:text-left">
-        <h2 class="text-2xl sm:text-3xl font-bold text-[#111827] leading-tight">
-          Introduce with Our<br>Famous Teacher
-        </h2>
-        <button class="bg-[#FFB200] hover:bg-[#e09c00] text-white font-medium text-xs py-3.5 px-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-200">
-          View All Teachers
-        </button>
-      </div>
-
-      <!-- Teachers Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center items-start">
-        
-        <!-- Teacher 1 -->
-        <div class="flex flex-col items-center text-center">
-            <div class="w-44 h-44 rounded-full mb-4 flex-shrink-0 overflow-hidden">
-                <img src="เปี็ยก.jpg"
-                     alt="Shaapir Prio"
-                     class="w-full h-full object-cover" />
-              </div>
-          <h3 class="text-lg font-bold text-gray-900">Shaapir Prio</h3>
-          <p class="text-xs text-gray-400 mt-1 mb-3 h-4">Assistant Director</p>
-          <div class="flex space-x-3 text-gray-400 text-xs">
-            <a href="#" class="hover:text-[#FFB200] transition-colors"><i class="fab fa-google"></i></a>
-            <a href="#" class="hover:text-[#FFB200] transition-colors"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="hover:text-[#FFB200] transition-colors"><i class="fas fa-dribbble"></i></a>
-            <a href="#" class="hover:text-[#FFB200] transition-colors"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-
-        <!-- Teacher 2 -->
-        <div class="flex flex-col items-center text-center">
-            <div class="w-44 h-44 rounded-full mb-4 flex-shrink-0 overflow-hidden">
-                <img src="สอง.jpg"
-                     alt="Sellina"
-                     class="w-full h-full object-cover" />
-              </div>
-          <h3 class="text-lg font-bold text-gray-900">Sellina</h3>
-          <p class="text-xs text-gray-400 mt-1 mb-3 h-4">Director</p>
-          <div class="flex space-x-3 text-gray-400 text-xs">
-            <a href="#" class="hover:text-[#FFB200] transition-colors"><i class="fab fa-google"></i></a>
-            <a href="#" class="hover:text-[#FFB200] transition-colors"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="hover:text-[#FFB200] transition-colors"><i class="fas fa-dribbble"></i></a>
-            <a href="#" class="hover:text-[#FFB200] transition-colors"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-
-        <!-- Teacher 3 -->
-        <div class="flex flex-col items-center text-center">
-            <div class="w-44 h-44 rounded-full mb-4 flex-shrink-0 overflow-hidden">
-                <img src="มงคล.jpg"
-                     alt="john smith"
-                     class="w-full h-full object-cover" />
-              </div>
-          <h3 class="text-lg font-bold text-gray-900">John Smith</h3>
-          <p class="text-xs text-gray-400 mt-1 mb-3 h-4">Assistant Director</p>
-          <div class="flex space-x-3 text-gray-400 text-xs">
-            <a href="#" class="hover:text-[#FFB200] transition-colors"><i class="fab fa-google"></i></a>
-            <a href="#" class="hover:text-[#FFB200] transition-colors"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="hover:text-[#FFB200] transition-colors"><i class="fas fa-dribbble"></i></a>
-            <a href="#" class="hover:text-[#FFB200] transition-colors"><i class="fab fa-linkedin-in"></i></a>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
 </section>
-
 <!-- Section 4: johnny -->
 <section>
 <!-- คนที่ได้รับมอบหมายให้ทำ Section 4 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
 </section>
-
 </body>
 </html>

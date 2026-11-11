@@ -6,12 +6,124 @@
   <title>Landing Page Component</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
+   <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Fonts: Plus Jakarta Sans / Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-white text-gray-800 antialiased min-h-screen">
 <!-- Section 1: gg -->
 <section>
-<!-- คนที่ได้รับมอบหมายให้ทำ Section 1 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
+
+  <!-- ================= HEADER / NAVIGATION ================= -->
+  <header class="max-w-7xl mx-auto px-6 lg:px-12 py-6 flex items-center justify-between">
+    <!-- Logo -->
+    <div class="flex items-center gap-2">
+      <div class="relative flex items-center justify-center w-10 h-10 rounded-full bg-amber-500 text-white font-bold text-xl shadow-md">
+        <!-- Graduation cap mini icon overlay -->
+        <i data-lucide="graduation-cap" class="w-6 h-6"></i>
+      </div>
+      <span class="text-2xl font-extrabold tracking-tight text-gray-900">Eu.</span>
+    </div>
+
+    <!-- Desktop Navigation Links -->
+    <nav class="hidden md:flex items-center gap-10 font-medium text-sm text-gray-700">
+      <a href="#" class="text-gray-900 font-semibold relative after:content-[''] after:absolute after:-bottom-1 after:left-0 after:w-full after:h-0.5 after:bg-amber-500">Home</a>
+      <a href="#" class="hover:text-amber-600 transition-colors">Admission</a>
+      <a href="#" class="hover:text-amber-600 transition-colors">Academic</a>
+    </nav>
+
+    <!-- Desktop CTA Button -->
+    <div class="hidden md:block">
+      <a href="#" class="bg-gray-900 hover:bg-gray-800 text-white px-6 py-2.5 rounded-xl font-medium text-sm transition-all duration-200 shadow-md hover:shadow-lg">
+        Contact Now
+      </a>
+    </div>
+
+    <!-- Mobile Menu Icon Button -->
+    <button class="md:hidden text-gray-800 p-2 focus:outline-none" aria-label="Toggle Menu">
+      <i data-lucide="grid" class="w-7 h-7"></i>
+    </button>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="max-w-7xl mx-auto px-6 lg:px-12 py-8 lg:py-16">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+      
+      <!-- LEFT COLUMN: Text Content (Desktop: Left, Mobile: Bottom) -->
+      <div class="lg:col-span-5 order-2 lg:order-1 text-left">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-[1.15] tracking-tight mb-6">
+          Start Your <br class="hidden sm:inline" />
+          Future <br class="hidden sm:inline" />
+          Education
+        </h1>
+        
+        <p class="text-gray-500 text-base sm:text-lg leading-relaxed max-w-md mb-8">
+          Credibly redefine distinctive total linkage vis-a-vis multifunc data. Phosfluorescently impact goal-oriented strategic
+        </p>
+
+        <div>
+          <a href="#" class="inline-flex items-center justify-center bg-amber-500 hover:bg-amber-600 text-white font-semibold px-8 py-3.5 rounded-2xl shadow-lg shadow-amber-500/30 transition-all duration-200 hover:-translate-y-0.5">
+            Discover More
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN: Graphic & Floating Cards (Desktop: Right, Mobile: Top) -->
+      <div class="lg:col-span-7 order-1 lg:order-2 flex justify-center lg:justify-end relative">
+        <div class="relative w-full max-w-[480px] lg:max-w-[540px] aspect-square flex items-center justify-center">
+          
+          <!-- Background Light Circle -->
+          <div class="absolute inset-4 rounded-full bg-[#FFEED4]/70 -z-10"></div>
+
+          <!-- Central Yellow Paint Brush / Illustration Placeholder -->
+          
+             <img src="/assets/Group 5893.png" alt="Brush Texture" class="w-full h-full object-contain">
+          </div>
+
+          <!-- FLOATING CARD 1: Congratulations Email (Left Top) -->
+          <div class="absolute top-8 left-0 sm:left-4 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl shadow-gray-200/50 border border-white flex flex-col items-center text-center max-w-[170px] sm:max-w-[190px] animate-bounce-slow">
+            <div class="w-10 h-10 rounded-xl bg-indigo-600 flex items-center justify-center text-white mb-2 shadow-md shadow-indigo-200">
+              <i data-lucide="mail" class="w-5 h-5"></i>
+            </div>
+            <h4 class="font-bold text-gray-900 text-xs sm:text-sm">Congratulations!</h4>
+            <p class="text-[11px] text-gray-400 font-medium mt-0.5">You got a new email</p>
+          </div>
+
+          <!-- FLOATING CARD 2: Happy Students (Right Top) -->
+          <div class="absolute top-4 right-0 sm:right-4 bg-white/95 backdrop-blur-sm p-4 rounded-2xl shadow-xl shadow-gray-200/50 border border-white flex flex-col items-center text-center max-w-[170px] sm:max-w-[190px]">
+            <div class="w-9 h-9 rounded-full bg-sky-400 flex items-center justify-center text-white mb-2 shadow-md shadow-sky-200">
+              <i data-lucide="heart" class="w-4 h-4 fill-white"></i>
+            </div>
+            <h3 class="font-extrabold text-gray-900 text-lg sm:text-xl leading-none">40k +</h3>
+            <p class="text-[11px] text-gray-400 font-medium mt-1 mb-3">Happy Students</p>
+            
+            <!-- Avatar Placeholders -->
+            <div class="flex -space-x-2">
+  <div class="w-7 h-7 rounded-full bg-gray-300 border-2 border-white overflow-hidden">
+    <img src="/assets/1200_800_อนาคตของการเรียนรู้ทักษะใหม่_1.jpg" class="w-full h-full object-cover">
+  </div>
+  <div class="w-7 h-7 rounded-full bg-gray-400 border-2 border-white overflow-hidden">
+    <img src="/assets/ดาวน์โหลด.jpg" class="w-full h-full object-cover">
+  </div>
+  <div class="w-7 h-7 rounded-full bg-gray-300 border-2 border-white overflow-hidden">
+    <img src="/assets/images.jpg" class="w-full h-full object-cover">
+  </div>
+  <div class="w-7 h-7 rounded-full bg-gray-400 border-2 border-white overflow-hidden">
+    <img src="/assets/images (1).jpg" class="w-full h-full object-cover">
+  </div>
+</div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Script สำหรับเริ่มใช้งาน Lucide Icons -->
+  <script>
+    lucide.createIcons();
+  </script><!-- คนที่ได้รับมอบหมายให้ทำ Section 1 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
 </section>
 
 <!-- Section 2: shine -->

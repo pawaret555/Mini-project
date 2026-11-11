@@ -1,35 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Tailwind CSS -->
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<title>Document</title>
-<style>
-* {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page Component</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+ 
 </head>
-<body>
-<!-- Section 1: gg -->
-<section>
-<!-- คนที่ได้รับมอบหมายให้ทำ Section 1 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
-</section>
-<!-- Section 2: shine -->
-<section>
-<!-- คนที่ได้รับมอบหมายให้ทำ Section 2 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
-</section>
-<!-- Section 3: save -->
-<section>
-<!-- คนที่ได้รับมอบหมายให้ทำ Section 3 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
-</section>
-<!-- Section 4: johnny -->
-<section>
-<!-- คนที่ได้รับมอบหมายให้ทำ Section 4 สามารถเขียนโค้ดภายใต้ <section> ได้เลย -->
-</section>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<body class="bg-white text-gray-800 antialiased min-h-screen">
+
+  <!-- SECTION 1: Popular Departments -->
+   
+  <section class="bg-[#F5EBD8] mt-10 py-12 sm:py-16 px-4 sm:px-6 lg:px-8 w-full sm:w-[92%] lg:w-[90%] mx-auto flex justify-center">
+    <div class="max-w-5xl w-full mx-auto flex flex-col items-center">
+      
+      <!-- Title -->
+      <h2 class="text-2xl sm:text-3xl font-bold text-center text-[#111827] mb-8 sm:mb-12 leading-tight">
+        We Have Most of<br class="hidden sm:inline"> Popular Departments
+      </h2>
+
+      <!-- Cards Grid (Centered & Responsive) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mb-10 justify-items-center">
+        
+        <!-- Card 1 -->
+        <div class="bg-white rounded-[28px] p-6 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_15px_35px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col justify-between w-full max-w-sm">
+          <div>
+            <div class="w-full h-48 rounded-2xl mb-6 overflow-hidden">
+                <img
+                  src="AI.jpg"
+                  alt="Artificial Intelligence"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            <h3 class="text-xl font-bold text-[#222222] mb-3 tracking-tight">Artificial Intelligence</h3>
+            <p class="text-sm text-[#7A7A7A] leading-relaxed mb-6">
+              Assertively parallel task synergistic deliverables after high-quality.
+            </p>
+          </div>
+          <a href="#" class="inline-flex items-center text-sm font-semibold text-[#FFB200] hover:text-[#e09c00] transition-colors">
+            Learn More <span class="ml-2 text-lg">→</span>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-[28px] p-6 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_15px_35px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col justify-between w-full max-w-sm">
+          <div>
+            <div class="w-full h-48 rounded-2xl mb-6 overflow-hidden">
+                <img
+                  src="engineering.jpg"
+                  alt="Civil Engineering"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            <h3 class="text-xl font-bold text-[#222222] mb-3 tracking-tight">Civil Engineering</h3>
+            <p class="text-sm text-[#7A7A7A] leading-relaxed mb-6">
+              Assertively parallel task synergistic deliverables after high-quality.
+            </p>
+          </div>
+          <a href="#" class="inline-flex items-center text-sm font-semibold text-[#FFB200] hover:text-[#e09c00] transition-colors">
+            Learn More <span class="ml-2 text-lg">→</span>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-[28px] p-6 shadow-[0_10px_30px_rgba(0,0,0,0.04)] hover:shadow-[0_15px_35px_rgba(0,0,0,0.08)] transition-all duration-300 flex flex-col justify-between w-full max-w-sm">
+          <div>
+            <div class="w-full h-48 rounded-2xl mb-6 overflow-hidden">
+                <img
+                  src="Business .jpg"
+                  alt="Business Studies"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            <h3 class="text-xl font-bold text-[#222222] mb-3 tracking-tight">Business Studies</h3>
+            <p class="text-sm text-[#7A7A7A] leading-relaxed mb-6">
+              Assertively parallel task synergistic deliverables after high-quality.
+            </p>
+          </div>
+          <a href="#" class="inline-flex items-center text-sm font-semibold text-[#FFB200] hover:text-[#e09c00] transition-colors">
+            Learn More <span class="ml-2 text-lg">→</span>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Button -->
+      <button class="bg-[#FFB200] hover:bg-[#e09c00] text-white font-medium text-xs py-3.5 px-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-200">
+        View All Department
+      </button>
+
+    </div>
+  </section>
+
+
+  <!-- SECTION 2: Famous Teacher -->
+  <section class="py-12 sm:py-16 px-4 sm:px-6 lg:px-8 w-full flex justify-center">
+    <div class="max-w-5xl w-full mx-auto">
+      
+      <!-- Header Area -->
+      <div class="flex flex-col sm:flex-row justify-between items-center mb-12 gap-4 text-center sm:text-left">
+        <h2 class="text-2xl sm:text-3xl font-bold text-[#111827] leading-tight">
+          Introduce with Our<br>Famous Teacher
+        </h2>
+        <button class="bg-[#FFB200] hover:bg-[#e09c00] text-white font-medium text-xs py-3.5 px-8 rounded-xl shadow-md hover:shadow-lg transition-all duration-200">
+          View All Teachers
+        </button>
+      </div>
+
+      <!-- Teachers Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center items-start">
+        
+        <!-- Teacher 1 -->
+        <div class="flex flex-col items-center text-center">
+            <div class="w-44 h-44 rounded-full mb-4 flex-shrink-0 overflow-hidden">
+                <img src="เปี็ยก.jpg"
+                     alt="Shaapir Prio"
+                     class="w-full h-full object-cover" />
+              </div>
+          <h3 class="text-lg font-bold text-gray-900">Shaapir Prio</h3>
+          <p class="text-xs text-gray-400 mt-1 mb-3 h-4">Assistant Director</p>
+          <div class="flex space-x-3 text-gray-400 text-xs">
+            <a href="#" class="hover:text-[#FFB200] transition-colors"><i class="fab fa-google"></i></a>
+            <a href="#" class="hover:text-[#FFB200] transition-colors"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-[#FFB200] transition-colors"><i class="fas fa-dribbble"></i></a>
+            <a href="#" class="hover:text-[#FFB200] transition-colors"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Teacher 2 -->
+        <div class="flex flex-col items-center text-center">
+            <div class="w-44 h-44 rounded-full mb-4 flex-shrink-0 overflow-hidden">
+                <img src="สอง.jpg"
+                     alt="Sellina"
+                     class="w-full h-full object-cover" />
+              </div>
+          <h3 class="text-lg font-bold text-gray-900">Sellina</h3>
+          <p class="text-xs text-gray-400 mt-1 mb-3 h-4">Director</p>
+          <div class="flex space-x-3 text-gray-400 text-xs">
+            <a href="#" class="hover:text-[#FFB200] transition-colors"><i class="fab fa-google"></i></a>
+            <a href="#" class="hover:text-[#FFB200] transition-colors"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-[#FFB200] transition-colors"><i class="fas fa-dribbble"></i></a>
+            <a href="#" class="hover:text-[#FFB200] transition-colors"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <!-- Teacher 3 -->
+        <div class="flex flex-col items-center text-center">
+            <div class="w-44 h-44 rounded-full mb-4 flex-shrink-0 overflow-hidden">
+                <img src="มงคล.jpg"
+                     alt="john smith"
+                     class="w-full h-full object-cover" />
+              </div>
+          <h3 class="text-lg font-bold text-gray-900">John Smith</h3>
+          <p class="text-xs text-gray-400 mt-1 mb-3 h-4">Assistant Director</p>
+          <div class="flex space-x-3 text-gray-400 text-xs">
+            <a href="#" class="hover:text-[#FFB200] transition-colors"><i class="fab fa-google"></i></a>
+            <a href="#" class="hover:text-[#FFB200] transition-colors"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-[#FFB200] transition-colors"><i class="fas fa-dribbble"></i></a>
+            <a href="#" class="hover:text-[#FFB200] transition-colors"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
 </body>
 </html>
